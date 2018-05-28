@@ -1,0 +1,936 @@
+
+/* Fonts  */
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+font-family: 'Open Sans';
+src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'lato';
+src: url('../fonts/Lato-Regular.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'lato';
+src: url('../fonts/Lato-Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+	font-family: 'Yeseva One';
+	src: url('../fonts/YesevaOne-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gentium Book Basic';
+	src: url('../fonts/GenBkBasB.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gentium Book Basic';
+	src: url('../fonts/GenBkBasR.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+	
+
+/* Global styles */
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+body {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 24px;
+	
+	color: #ffffff;
+	background: #dddfe0 no-repeat center top;
+}
+
+
+h1 {
+	display: none;
+}
+
+h3 {
+	position: relative;
+
+	padding-bottom: 47px;
+	margin-bottom: 10px;
+
+	font-family: 'Yeseva One', 'Arial', sans-serif;
+	font-size: 36px;
+	line-height: 24px;
+	font-weight: 400;
+	text-align: center;
+
+	color: #cc9900;
+}
+
+h3::after {
+	position: absolute;
+	left: 30%;
+	bottom: 0;
+
+	content: "";
+	width: 247px;
+	height: 24px;
+
+	background-image: url(../img/yellow-divider.png);
+	text-align: center;
+}
+
+p {
+	font-family: "lato", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+
+	color: #4c4c4c;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+.wrapper {
+	margin: 0 auto;
+	width: 1600px;
+	min-height: calc(100vh - 320px);
+	
+	box-shadow: inset 0 170px 250px -130px rgba(0, 0, 0, 0.9);
+	background: #3a3f43 url(../img/header-bg.jpg) no-repeat center top;
+}
+
+.footer-wrapper {
+	margin: 0 auto;
+	width: 1600px;
+	height: 320px;
+
+	background-color: #3a3f43;
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 1250px;
+	padding: 0 5px;
+	
+}
+
+
+
+/* Styles for Header */
+
+
+.site-header {
+	position: relative;
+	margin-bottom: 140px;
+	color: #fff;
+}
+
+.page-logo {
+	float: left;
+	width: 156px;
+	height: 26px;
+	margin: 0;
+	padding: 0;
+	margin-top: 47px; 
+}
+
+
+.main-menu {
+	float: right;
+	width: 870px;
+}
+
+
+.main-menu ul {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Gentium Book Basic', 'Arial', sans-serif;
+	font-size: 0;
+	line-height: 21px;
+	font-weight: 700;
+	list-style: none;
+}
+
+.main-menu li {
+	display: inline-block;
+
+	font-size: 21px;
+	vertical-align: top;
+}
+
+
+.main-menu li a {
+	display: block;
+	padding: 51px 26px 0px 25px;
+}
+
+.main-menu li a:hover {
+	background-color:rgba(150, 145, 138, 0.3);
+	color: rgba(7, 7, 7, 1)
+}
+
+.main-menu .active {
+	position: relative;
+}
+
+.main-menu .active::before {
+	position: absolute;
+	top: 0;
+	left: 13px;
+	right: 13px;
+
+	content: "";
+	height: 3px;
+
+	background: #fff;
+	opacity: 0.71;
+}
+
+.social-links {
+	position: absolute;
+	right: 39px;
+	top: 50px;
+
+	padding-left: 0px;
+
+	font-size: 0;
+}
+
+.social-links a {
+	display: inline-block;
+	padding-left: 0;
+	padding-right: 16px;
+
+	font-size: 21px;
+	color: #dab33e;
+}
+
+
+.social-links a:last-child {
+	padding-right: 0px;
+}
+
+.social-links a:hover {
+	color: rgba(255, 255, 255, 0.7)
+}
+
+
+.home-content h2	{
+	position: relative;
+
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	padding-bottom: 26px;
+	width: 970px;
+
+	font-family: 'Yeseva One', 'Arial', sans-serif;
+	font-size: 90px;
+	font-weight: 400;
+	line-height: 118px;
+	text-align: center;
+
+	text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
+	opacity: 0.92;
+}
+
+.home-content h2::after {
+	position: absolute;
+	bottom: -41px;
+	left: 372px;
+
+	content: "";
+	width: 232px;
+	height: 43px;
+
+	background-image: url(../img/home-content-divider.png);
+}
+
+
+.buttons-field {
+	margin-bottom: 144px;
+	text-align: center;
+	font-size: 0;
+}
+
+.btn	{
+	display: inline-block;
+	width: 228px;
+	height: 57px;
+	margin-right: 29px;
+	padding: 0;
+	padding-top: 16px;
+
+	font-family: "lato", "Arial", sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+
+.btn:last-child {
+	margin-right: 0;
+}
+
+.offer-btn {
+	background-color: rgba(0, 0, 0, 0.55);
+}
+
+.offer-btn:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #000000;
+}
+
+.menu-btn {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.menu-btn:hover {
+	background-color: rgba(0, 0, 0, 0.55);
+	color: #000000;
+}
+
+
+/* Section About Styles */
+
+
+
+.about-content {
+	position: relative;
+
+	min-height: 710px;
+	padding: 0;
+	padding-top: 55px;
+	padding-bottom: 20px;
+	padding-left: 41px;
+
+	background: #ffffff url(../img/default-section-pattern.jpg) repeat 35px 0px;
+	color: #000000;
+
+}
+
+.about-content::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 100%;
+	content: "";
+
+	background: transparent;
+	background-image: linear-gradient(-90deg, rgba(37, 35, 35, 0.08) 0%, rgba(200, 200, 200, 0.03) 100%);
+	box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+}
+
+.left-column-content {
+	float: left;
+	width: 600px;
+	
+}
+
+.right-column-content {
+	float: right;
+	width: 640px;
+}
+
+.about-content figure {
+	margin: 0;
+	margin-left: -60px;
+
+}
+
+.about-content p {
+	display: inline-block;
+	padding: 0 92px 0 90px;
+	margin-bottom: 49px;
+}
+
+.about-content h3 {
+	padding-top: 18px;
+}
+
+.about-section-photo {
+	margin-right: -70px;
+	text-align: center;
+}
+
+
+
+/* Ingredients Section Styles */
+
+.ingredients {
+	min-height: 758px;
+	padding: 0;
+
+	background: #53a05e url(../img/ingredients-bg.jpg) repeat center top;
+
+}
+
+.ingredients .right-column-content {
+	width: 570px;
+	margin-top: 100px;
+	margin-right: 35px;
+
+	background-color: rgba(0, 0, 0, 0.58);
+}
+
+
+.ingredients h3 {
+	margin-top: 85px;
+	margin-bottom: 8px;
+	color: #ffffff;
+}
+
+.ingredients h3::after {
+	left: 162px;
+	background-image: url(../img/white-divider.png);
+}
+
+
+.ingredients p {
+	display: inline-block;
+	padding: 0 80px;
+	margin-bottom: 32px;
+	color: #ffffff;
+}
+
+
+.ingredients figure div {
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	margin-right: 22px;
+
+	border-radius: 50%;
+	border: 5px solid rgba(49, 48, 48, 0.8);
+}
+
+.ingredients figure div:last-child {
+	margin-right: 0px;
+}
+
+.first-ingerient {
+	background: url(../img/first-ingredient.png) no-repeat 27% 40%;
+}
+
+.second-ingerient {
+	background: url(../img/second-ingredient.png) no-repeat 32% 80%;
+}
+
+.third-ingerient {
+	background: url(../img/third-ingredient.png) no-repeat 42% 51%;
+}
+
+
+.ingredients figure {
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+
+
+
+/* Menu Section Styles */
+
+.menu {
+	min-height: 995px;
+
+	background: #3a3f43 url(../img/menu-pattern.jpg) repeat 55px 10px;
+	box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+	color: #4c4c4c;
+}
+
+.menu .left-column-content,
+.menu .right-column-content  {
+	padding-top: 71px;
+	padding-left: 105px;
+	padding-right: 65px;;
+}
+
+.menu h3::after {
+	left: 21%;
+	bottom: 0;
+}
+
+.menu .right-column-content h3 {
+	padding-left: 0px;
+	padding-right: 38px;
+}
+
+.menu .right-column-content h3::after {
+	left: 19%;
+}
+
+
+.prices  {
+	width: 430px;
+	margin: 0;
+	margin-bottom: 68px;
+
+	font-family: "lato", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+
+	border-collapse: collapse;
+}
+
+.prices tr {
+	display: block;
+	border-bottom: 1px solid #e2d7b5;
+}
+
+
+.prices tr:nth-child(2n) {
+	border: none;
+}
+
+.prices td {
+	width: 215px;
+	padding: 0;
+}
+
+.prices .menu-description {
+	width: 100%;
+	padding-top: 8px;
+}
+
+.prices td + td {
+	text-align: right;
+}
+
+
+.prices tr:nth-child(2n+1) {
+	margin-top: 33px;
+	padding-bottom: 8px;
+
+	font-family: 'Yeseva One', 'Arial', sans-serif;
+	font-size: 21px;
+
+	color: #c89f2d;
+}
+
+ .prices tr:first-child {
+	margin-top: 19px;
+}
+
+
+.special-dish {
+	position: relative;
+}
+
+.special-dish::before {
+	position: absolute;
+	left: 372px;
+	bottom: 30px;
+
+	content: "Special";
+	width: 69px;
+	height: 22px;
+
+	font-family: "lato", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	vertical-align: middle;
+	text-align: center;
+
+	background: #c89f2d url(../img/special-dish-bg.jpg) no-repeat center top;
+	color: #f8fafa;
+
+}
+
+.special-dish::after {
+	position: absolute;
+	left: -16px;
+	top: -7px;
+
+	content: "";
+	width: 455px;
+	height: 81px;
+
+	border: 1px solid #e2d7b5;
+}
+
+
+
+
+
+/* Reviews Section Styles */
+
+.reviews {
+	min-height: 757px;
+	padding-top: 100px;
+
+	background: #3a3f43 url(../img/reviews-bg.jpg) no-repeat 0 top;
+}
+
+.reviews-layout {
+	width: 770px;
+	margin: 0 auto;
+	padding-top: 48px;
+	padding-bottom: 100px;
+
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.reviews blockquote {
+	position: relative;
+
+	padding: 0 25px 0 25px;
+	margin-bottom: 28px;
+	margin-top: 20px;
+
+	font-family: 'Gentium Book Basic', 'Arial', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 45px;
+
+	color: #e2dada;
+}
+
+.reviews cite {
+	font-family: 'lato', 'Arial', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	font-style: normal;
+
+	color: #ffffff;
+}
+
+.reviews span {
+	position: absolute;
+	top: -5px;
+	left: -10px;
+
+	width: 32px;
+	height: 25px;
+
+	background: url(../img/review-quotes.png) no-repeat center top;
+}
+
+
+.reviews h3 {
+	color: #ffffff;
+}
+
+.reviews h3::after {
+	left: 34%;
+	background-image: url(../img/white-divider.png);
+}
+
+
+/* Booking Section Styles */
+
+
+.booking-section {
+	position: relative;
+
+	min-height: 710px;
+	padding: 0;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	padding-left: 71px;
+
+	background: #ffffff url(../img/default-section-pattern.jpg) repeat 35px 0;
+	color: #000000;
+
+}
+
+.booking-section figure {
+	margin: 0;
+}
+
+.booking-section img {
+	margin-right: 20px;
+}
+
+.booking-section img:last-child {
+	margin-right: 0;
+}
+
+.booking-section .right-column-content {
+	padding-left: 70px;
+	padding-right: 110px;
+}
+
+.booking-section h3 {
+	padding-right: 26px;
+	margin-top: 5px;
+}
+
+.booking-section h3::after {
+	left: 20%;
+}
+
+.booking-section p {
+	padding: 0;
+	padding-top: 17px;
+	padding-left: 0px;
+	padding-right: 30px;
+	margin: 0;
+
+	color: #4c4c4c;
+}
+
+.booking-section p:last-of-type {
+	padding-top: 10px;
+}
+
+.booking-section form {
+	margin: 0;
+	margin-top: 35px;
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 0px;
+}
+
+.booking-section label {
+	display: block;
+
+	font-size: 14px;
+	color: #c9a131;
+
+}
+
+.booking-section input {
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	padding-left: 14px;
+	margin-top: 3px;
+	margin-bottom: 20px;
+
+	font-style: italic;
+	font-size: 16px;
+}
+
+.booking-section .date-label {
+	position: relative;
+}
+
+.booking-section .fa-calendar {
+	position: absolute;
+	top: 37px;
+	right: 11px;
+	z-index: 30;
+
+	font-size: 14px;
+	color: #7c7c7c;
+}
+
+.booking-section .date-placeholder {
+	position: absolute;
+	top: 33px;
+	left: 14px;
+	z-index: 30;
+
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+	color: #7c7c7c;
+}
+
+.booking-section .half-width-column {
+	display: inline-block;
+	width: 200px;
+	padding: 0;
+	margin: 0;
+	margin-right: 30px;
+}
+
+
+.booking-section input[type="number"] {
+	padding-right: 10px;
+	padding-top: 8px;
+	padding-bottom: 5px;
+}
+
+.booking-section input[type="date"] {
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+
+.booking-section input[type="submit"] {
+	display: block;
+	width: 200px;
+	margin-left: 115px;
+	margin-top: 12px;
+	padding: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;	
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+
+	background-color: #c89f2d;
+	border: 1px solid #c89f2d;
+	color: #ffffff;
+}
+
+.booking-section input[type="submit"]:hover {
+	background-color: #53a05e;
+}
+
+.booking-section input[type="date"]::-webkit-outer-spin-button,
+.booking-section input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+
+/* Footer Styles */
+
+footer {
+	height: 320px;
+	padding-top: 56px;
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+
+	background-color: #191919;
+	color: #fefefe;
+}
+
+footer section{
+	text-align: center;
+}
+
+footer h4 {
+	position: relative;
+
+	margin: 0;
+	padding-bottom: 37px;
+
+	font-family: 'Yeseva One', 'Arial', sans-serif;
+	font-size: 21px;
+	font-weight: 400;
+}
+
+footer h4::after {
+	position: absolute;
+	top: 40px;
+	left: 75px;
+
+	content: "";
+	width: 199px;
+	height: 19px;
+
+	background-image: url(../img/footer-divider.png);
+}
+
+footer p {
+	margin-bottom: 46px;
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	color: #fefefe; 
+}
+
+.footer-cards a {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.footer-cards a:first-child {
+	margin-left: 10px;
+}
+
+
+.footer-cards a:last-child {
+	margin-right: 0px;
+}
+
+.footer-social a {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.footer-social a:first-child {
+	margin-left: 20px;
+}
+
+.footer-cards a:hover,
+.footer-social a:hover {
+	color: rgba(199, 199, 199, 0.7)
+}
+
+footer .about-us-section {
+	float: left;
+	width: 350px;
+	margin-left: 45px;
+	margin-right: 126px;
+}
+
+
+footer .time-section {
+	float: left;
+	width: 200px;
+	margin-right: 195px;
+}
+
+footer .time-section h4::after {
+	left: 0px;
+}
+
+
+footer .location-section h4::after {
+	left: 5px;
+}
+
+footer .location-section {
+	float: left;
+	width: 210px;
+}
+
+footer .location-section p {
+	font-weight: 700;
+}
