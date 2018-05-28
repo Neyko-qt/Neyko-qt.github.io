@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Match-match Game</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<main class='game-section'>
+			<section class='main-content'>
+				<h1>Welcome to match-match Game!</h1>
+				<div class='rules'>
+					<p>Match-match game has long been a favorite game for all generations. It is easy to play,
+						<br> in fact it is so simple that really young children can play with ease.</p>
+					<a href="rules.html">
+						<b>Rules of the game (click)</b>
+					</a>
+					<form action="" class='form'>
+						<b>Fill fields in this form:</b>
+						<input type="text" id='first-name' name="fname" placeholder="First Name" required>
+						<input type="text" id='last-name' name="lname" placeholder="Last Name" required>
+						<input type="email" id='email' name="mail" placeholder="Email" required>
+						<input type="submit" class="button" id='submit'>
+					</form>
+					<section class='shirts-section'>
+						<div id='shirt-select'>Select shirt of cards
+							<div>
+								<div id='firstCard' class='shirts'>
+									<img src="imgs/shirt1.jpg" alt="first">
+								</div>
+								<div id='secondCard' class='shirts'>
+									<img src="imgs/shirt2.jpg" alt="second">
+								</div>
+								<div id='thirdCard' class='shirts'>
+									<img src="imgs/shirt3.jpg" alt="third">
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class='difficulty'>
+						<div>Game difficulty</div>
+						<select id='difficult'>
+							<option value='default'></option>
+							<option value='easy'>8 cards</option>
+							<option value='medium'>16 cards</option>
+							<option value='hard'>24 cards</option>
+						</select>
+					</section>
+					<button type="button" id='start-game' class='hide'>Start game</button>
+				</div>
+			</section>
+		</main>
+		<div class='hide' id='win'>
+			<a href="index.html" class='button'>Play again</a>
+			<h2>Congratulations!</h2>
+		</div>
+		<section class="top-section">
+			<h2>TOP-10</h2>
+			<div class="top-table"></div>
+		</section>
+	</div>
+	<script src='js/main.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+/* Global styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans';
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #6b6161;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+.valid {
+	background-color: rgb(127, 199, 127);
+}
+
+.invalid {
+	background-color: rgb(197, 122, 122);
+}
+
+.container {
+	width: 1600px;
+	min-height: 900px;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	background-color: rgb(192, 224, 192);
+}
+
+.game-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/* Main-content styles */
+
+.main-content {
+	margin-top: 30px;
+	padding: 25px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: rgb(236, 231, 231);
+	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+	background: url()
+}
+
+.main-content h1 {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: normal;
+}
+
+.main-content b {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+/* Rules section styles */
+
+.rules p {
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+/* Registration form styles */
+
+.form {
+	margin: 0 auto;
+}
+
+.form input {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 25px;
+	padding: 8px;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.button {
+	display: inline-block;
+	width: 240px;
+	cursor: pointer;
+	border: 1px solid rgb(153, 151, 151);
+	text-decoration: none;
+	white-space: nowrap;
+	color: #272626;
+	background-color: rgb(173, 212, 175);
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+}
+
+.button:hover {
+	background-color: #eee;
+	color: #555;
+}
+
+.button:active {
+	background: #e9e9e9;
+	position: relative;
+	top: 1px;
+	text-shadow: none;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+
+.form .button {
+	height: auto;
+	padding: 5px;
+}
+
+/* Shirts-section styles */
+
+.shirts-section,
+.difficulty,
+.top-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	padding: 15px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: rgb(236, 231, 231);
+	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+}
+
+#shirt-select {
+	text-align: center;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.shirts {
+	margin-left: 8px;
+	margin-top: 12px;
+	border: 2px solid #000000;
+	height: 51px;
+	display: inline-block;
+}
+
+.shirts:hover {
+	opacity: 0.5;
+}
+
+/* Difficulty section styles */
+
+.difficulty {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.difficulty select {
+	margin-top: 20px;
+	width: 150px;
+	height: 40px;
+}
+
+/* Start game button */
+
+#start-game {
+	margin-top: 70px;
+	padding: 8px;
+	font-size: 20px;
+	background-color: rgb(39, 35, 75);
+	color: #fff;
+}
+
+/* Created ul deck styles */
+
+ul {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+li {
+	background-size: cover;
+	background-position: center;
+	width: 90px;
+	height: 135px;
+	margin: 15px;
+	border-radius: 15px;
+}
+
+/* Bg of cards */
+
+.img0 {
+	background-image: url(../imgs/id0.jpg);
+}
+
+.img1 {
+	background-image: url(../imgs/id1.jpg);
+}
+
+.img2 {
+	background-image: url(../imgs/id2.jpg);
+}
+
+.img3 {
+	background-image: url(../imgs/id3.jpg);
+}
+
+.img4 {
+	background-image: url(../imgs/id4.jpg);
+}
+
+.img5 {
+	background-image: url(../imgs/id5.jpg);
+}
+
+.img6 {
+	background-image: url(../imgs/id6.jpg);
+}
+
+.img7 {
+	background-image: url(../imgs/id7.jpg);
+}
+
+.img8 {
+	background-image: url(../imgs/id8.jpg);
+}
+
+.img9 {
+	background-image: url(../imgs/id9.jpg);
+}
+
+.img10 {
+	background-image: url(../imgs/id10.jpg);
+}
+
+.img11 {
+	background-image: url(../imgs/id11.jpg);
+}
+
+/* results section */
+
+#win {
+	margin-top: 50px;
+	font-size: 30px;
+	text-align: center;
+	align-self: center;
+	color: green;
+	font-family: arial, sans-serif;
+}
+
+.timer {
+	margin: 0 auto;
+	font-size: 40px;
+	font-family: arial, sans-serif;
+	color: #000000;
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+/* Shirts bg */
+
+li.shirt-f {
+	background-image: url(../imgs/firstCard.jpg);
+}
+
+li.shirt-s {
+	background-image: url(../imgs/secondCard.jpg);
+}
+
+li.shirt-t {
+	background-image: url(../imgs/thirdCard.jpg);
+}
+
+li {
+	transition: 1s;
+	transform-style: preserve-3d;
+	-webkit-transition: 1s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateY(0deg);
+	-moz-transition: 1s;
+	-moz-transform-style: preserve-3d;
+	-moz-transform: rotateY(0deg);
+}
+
+li.active {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+
+/* Table of records styles */
+
+.top-section {
+	padding: 5px;
+	height: auto;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top-section h2 {
+	padding-top: 10px;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.top-table span {
+	font-size: 16px;
+	margin: 5px;
+	font-style: italic;
+}
+
+.player-intop-div {
+	width: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.rules-page li {
+	display: list-item;
+	width: auto;
+	height: auto;
+}
+
+.rules-page .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+}
+
+.rules-page a {
+	width: 200px;
+	padding: 5px;
+	text-align: center;
+}
