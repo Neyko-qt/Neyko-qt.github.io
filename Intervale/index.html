@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Payment form</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="#" method="post" class="payment-form">
+      <div class="card-dates">
+        <h2>Данные отправителя</h2>
+        <div class="card sender-card clearfix">
+          <label for="sender-card-number">Номер карты</label>
+          <input type="text" name="card-number" id="sender-card-number" autofocus required>
+          <div class="left-column">
+            <label for="month-value">Срок действия</label>
+            <input type="text" name="month-value" id="month-value" placeholder="ММ" required>
+            <span>/</span>
+            <input type="text" name="year-value" id="year-value" placeholder="ГГ" required>
+          </div>
+          <div class="right-column">
+            <label for="cvv-value">CVV/CVC</label>
+            <input type="text" name="cvv-value" id="cvv-value">
+            <span class="float-tip cvv-float-tip" title="Текст всплывающей подсказки о CVV значении">?</span>
+          </div>
+          <div class="card-type"><img class="sender-card-type" src="" width="50px" height="32px" alt=""></div>
+        </div>
+      </div>
+      <div class="card-dates">
+        <h2>Данные получателя</h2>
+        <div class="card receiver-card">
+          <label for="receiver-card-number">Номер карты</label>
+          <input type="text" name="receiver-card-number" id="receiver-card-number" required>
+          <div class="card-type"><img class="receiver-card-type" src="" width="50px" height="32px" alt=""></div>
+        </div>
+      </div>
+      <div class="transfer-fields">
+        <input type="checkbox" name="email-check" id="email-check">
+        <label for="email-check">Отправить чек на e-mail</label>
+        <input type="email" name="email-field" id="email-field" placeholder="Ваш e-mail">
+        <label for="transfer-amount-field" class="transfer-amount-label">Сумма перевода<span class="currency-field">BYN</span>
+        <input type="text" name="transfer-amount-field" id="transfer-amount-field" placeholder="От 500 до 500000">
+      </label>
+        <label for="total-amount-field" class="total-amount-label">Итоговая сумма<span class="currency-field">BYN</span>
+        <input type="text" name="total-amount-field" id="total-amount-field" placeholder="От 680 до 530150">
+      </label>
+      </div>
+      <div class="message-checkbox-field">
+        <input type="checkbox" name="message-checkbox" id="message-checkbox">
+        <label for="message-checkbox">Добавить сообщение получателю</label>
+        <span class="float-tip message-float-tip" title="Текст всплывающей подсказки о сообщении получателю">?</span>
+      </div>
+      <input type="submit" id="submit-button" value="Перевести" title="Перевести">
+    </form>
+<!-- webpack js file-->
+     <script src="js/main.js"></script> 
+</body>
+
+</html>

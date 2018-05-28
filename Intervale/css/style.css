@@ -1,0 +1,394 @@
+/* Fonts family OpenSans */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-SemiBold.eot');
+  src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+      url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+      url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Main settings */
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+
+  color: #848484;
+  background: #f1f5f5;
+}
+
+/* Form styles */
+
+.payment-form {
+  width: 780px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.payment-form input {
+  margin-bottom: 15px;
+  width: 100%; 
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+ 
+}
+
+.payment-form input[type=checkbox] {
+  width: auto;
+  margin-bottom: 0;
+}
+
+/* Card styles */
+
+.card {
+  display: inline-block;
+  width: 360px;
+  height: 210px;
+  padding: 65px 35px 0 35px;
+
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px 5px #cfcccc;
+  border-radius: 15px;
+}
+
+.card {
+  position: relative;
+}
+
+.card .card-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 50px;
+  height: 32px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.card-dates {
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.card-dates:nth-child(2) {
+  margin-right: 0;
+}
+
+.card-dates h2 {
+  padding-left: 5px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+.card input {
+  padding: 5px;
+  
+  border: none;
+  border-bottom: 1px solid #000000;
+  
+}
+
+.card input:focus {
+  outline: none;
+  border-bottom: 1px solid #c58e8e;
+}
+
+.card label {
+  display: block;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Styles only for sender card */
+
+.sender-card input[id="month-value"],
+.sender-card input[id="year-value"] {
+  width: 40px;
+  text-align: center;
+}
+
+.sender-card input[id="cvv-value"] {
+  width: 55px;
+  text-align: center;
+}
+
+.left-column span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.sender-card .left-column {
+  float: left;
+}
+
+.sender-card .right-column {
+  position: relative;
+
+  float: right;
+  padding-right: 45px;
+}
+
+/* "Всплывающая подсказка"   */
+
+.float-tip {
+  position: absolute;
+  
+  width: 20px;
+  height: 20px;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: center;
+  
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.float-tip:hover {
+  background-color: #fff6f6;
+  border: 1px solid #c58e8e;
+  cursor: pointer;
+}
+
+.right-column .cvv-float-tip {
+  top: 0;
+  left: 55%;
+}
+
+/* Styles for placeholder */
+
+.sender-card input::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: 600;
+
+  color: #000000;
+  
+}
+.sender-card input:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+  font-weight: 600;
+  
+  color: #000000;  
+} 
+.sender-card input::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+  font-weight: 600;
+  
+  color: #000000; 
+}  
+.sender-card input:-ms-input-placeholder {  
+  text-align: center;
+  font-weight: 600;
+  
+  color: #000000;
+}
+
+.sender-card input:focus::-webkit-input-placeholder {
+  color: #848484;
+}
+
+.sender-card input:focus:-moz-placeholder {
+  color: #848484;
+}
+
+.sender-card input:focus::-moz-placeholder {
+  color: #848484;
+}
+
+.sender-card input:focus:-ms-input-placeholder {
+  color: #848484;
+}
+
+/* Styles for checkbox "Добавить сообщение получателю" */
+
+.message-checkbox-field {
+  position: relative;
+}
+
+.message-checkbox-field .message-float-tip {
+  top: 2px;
+  left: 69%;
+
+  color: #848484;
+  border: 1px solid #848484;
+}
+
+
+
+/* Styles for form inputs(email, currence, submit, checkbox */
+
+.transfer-fields, .message-checkbox-field {
+  width: 360px;
+}
+
+.transfer-fields {
+  margin-right: 30px;
+}
+
+.transfer-fields label,
+.message-checkbox-field label {
+  font-size: 13px;
+  line-height: 22px;
+  vertical-align: top;
+
+}
+
+.transfer-fields input[type=text],
+.transfer-fields input[type=email] {
+  padding: 10px;
+  padding-right: 70px; 
+  padding-left: 15px;
+}
+
+.transfer-fields input[type=text]:focus,
+.transfer-fields input[type=email]:focus {
+  outline-color: #c58e8e;
+}
+
+.transfer-fields input::-webkit-input-placeholder {
+  opacity: 0.7;
+}
+.transfer-fields input:-moz-placeholder { /* Firefox 18- */
+  opacity: 0.7;  
+} 
+.transfer-fields input::-moz-placeholder {  /* Firefox 19+ */
+  opacity: 0.7; 
+}  
+.transfer-fields input:-ms-input-placeholder {  
+  opacity: 0.7;
+}
+
+.transfer-amount-label, 
+.total-amount-label  {
+ position: relative;
+}
+
+.transfer-fields .currency-field {
+  position: absolute;
+  top: 29px;
+  right: 0;
+
+  padding-right: 10px;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.payment-form input[type=submit] {
+  width: 360px;
+  padding: 10px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+
+  background-color: #34902b;
+  color: #ffffff;
+  border: none;
+}
+
+/* when device width < 780px   */
+
+@media (max-width:780px) {
+  .payment-form {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .transfer-fields, .message-checkbox-field {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .card-dates {
+    margin-right: 0;
+  }
+
+  .payment-form input[type=submit] {
+    display: block;
+    width: 100%;
+  } 
+
+  .message-checkbox-field {
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .message-checkbox-field .message-float-tip {
+    top: 3px;
+    left: 245px;
+
+    color: #848484;
+    border: 1px solid #848484;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+{
+  "name": "intervale",
+  "version": "1.0.0",
+  "description": "Payment form",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack --watch --mode production"
+  },
+  "author": "Kirill_Rjabokul",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.0.0"
+  }
+}
