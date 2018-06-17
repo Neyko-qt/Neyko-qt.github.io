@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles/game.css">
+  <link rel="stylesheet" type="text/css" href="styles/sprites.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <title>Game</title>
+</head>
+
+<body>
+  <section class="registration">
+    <h2>REGISTRATION</h2>
+    <form onsubmit="return false;">
+      <label>YOUR NAME:</label>
+      <input id="playerName" type="text" placeholder="*your name" required>
+      <button id="btnStart" type="submit">PLAY!</button>
+    </form>
+  </section>
+  <section class="mainGame">
+    <div class="namesPlace">
+      <h3 class="playerName"></h3>
+      <h3 class="zombieName"></h3>
+    </div>
+    <div class="healthBar">
+      <div class="healthBarOfPerson">
+        <div class="playerHealthCount"></div>
+      </div>
+      <div class="healthBarOfPerson healthOfZombie">
+        <div class="zombieHealthCount"></div>
+      </div>
+    </div>
+    <h2 class="counter">round 1</h2>
+    <form>
+      <button id="btnSelectedAbility" type="button">Cast!</button>
+    </form>
+    <div class="playerPicture playerStay"></div>
+    <div class="zombiePicture zombieStay">
+    </div>
+  </section>
+  <section class="scoreTable">
+    <table>
+      <tr>
+        <th>Player</th>
+        <th>Score</th>
+      </tr>
+    </table>
+    <a class="newGame btn" href="index.html">NEW GAME!</a>
+  </section>
+  <section class="abilityPage">
+    <div class="dialog ability">
+      <h2 class="abilityDescr">Attack or heal?</h2>
+      <div class="abilities">
+        <img id="attackAbility" class="abilityType" src="img/cast.png">
+        <img id="healAbility" class="abilityType" src="img/heal1.png">
+      </div>
+    </div>
+  </section>
+  <section class="taskSection">
+    <div class="dialog task">
+      <h2 class="condition"></h2>
+      <div id="tempMedia"></div>
+      <form onsubmit="return false;">
+        <input id="answerInput" type="text" placeholder="your answer">
+        <button id="btnAnswer" type="submit">OK</button>
+      </form>
+    </div>
+  </section>
+  <script src="dist/boundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+@font-face {
+	font-family: 'LogoBloquo';
+	src: url('../fonts/LogoBloquo.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Tangak';
+	src: url('../fonts/tangak.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 0;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Tangak;
+	text-shadow: 1px 1px 4px black;
+}
+
+body {
+	background-image: url('../img/main-background.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+section {
+	text-align: center;
+}
+
+.registration h2 {
+	margin-top: 200px;
+	color: #ffffeb;
+	text-shadow: 1px 1px 4px black;
+}
+
+.registration input {
+	text-align: center;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 30px;
+	font-size: 25px;
+	border: 2px solid #000;
+}
+
+.registration label {
+	color: #ffffeb;
+	display: block;
+}
+
+.registration input:hover,
+.registration input:active {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #ffffff;
+	border: 2px solid #fff;
+}
+
+.registration button {
+	display: block;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 300px;
+	margin: auto;
+	color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+	border: 2px solid #fff;
+	margin-top: 30px;
+}
+
+.registration button:hover {
+	background-color: rgba(255, 255, 255, 0.7);
+	color: #000;
+}
+
+.mainGame,
+.scoreTable,
+.taskSection,
+.abilityPage {
+	display: none;
+}
+
+.mainGame,
+.scoreTable {
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+
+.counter {
+	text-transform: uppercase;
+	color: #f8f8f8;
+	margin: 0 auto;
+	font-size: 80px;
+	margin-bottom: 50px;
+	text-shadow: 1px 1px 15px black;
+	margin-top: 50px;
+}
+
+.abilityPage,
+.taskSection {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dialog {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 40px;
+	padding: 30px;
+	text-transform: uppercase;
+	box-shadow: 0 0 60px rgba(255, 255, 255, 0.7);
+}
+
+.ability {
+	top: 30vh;
+	left: 35.5vw;
+}
+
+.task {
+	width: 700px;
+	top: 30vh;
+	left: 65vh;
+}
+
+.abilityDescr {
+	width: 100%;
+	height: 50%;
+	margin: 0;
+}
+
+h2 {
+	display: block;
+	font-size: 50px;
+	color: #ffffeb;
+	margin: 0 auto 50px;
+	line-height: 70px;
+}
+
+label {
+	color: #000000;
+	font-size: 30px;
+}
+
+input {
+	width: 300px;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0.7);
+	color: #000000;
+	font-size: 25px;
+	text-align: center;
+	margin: 0 20px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+}
+
+button {
+	background-color: #ffffff;
+	border-radius: 10px;
+	color: #000000;
+	font-size: 25px;
+	padding: 11px 40px;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+	border: 2px solid rgb(0, 0, 0);
+}
+
+button:hover {
+	border: 2px solid rgb(255, 255, 255);
+	background-color: #000;
+	color: #ffffff;
+}
+
+.playerImage {
+	width: 200px;
+	height: 500px;
+	position: absolute;
+	top: 30vh;
+	left: 20vh;
+	background-color: cornflowerblue;
+	font-size: 50px;
+	color: white;
+	display: none;
+}
+
+.namesPlace {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+
+.playerName,
+.zombieName {
+	margin-top: 20px;
+	text-transform: uppercase;
+	display: flex;
+	font-size: 25px;
+	color: #ffffff;
+	padding: 10px 30px;
+	letter-spacing: 5px;
+}
+
+.healthBar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.healthBarOfPerson {
+	display: flex;
+	justify-content: flex-start;
+	width: 25vw;
+	height: 4vh;
+	background-color: #7e2428;
+	border: 2px solid #ffffff;
+	margin: 0 30px;
+	border-radius: 3px;
+}
+
+.healthOfZombie {
+	justify-content: flex-end;
+}
+
+.playerHealthCount,
+.zombieHealthCount {
+	display: flex;
+	height: 100%;
+	background-color: #367236;
+	font-size: 25px;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+}
+
+.abilityType {
+	width: 50%;
+	height: 50%;
+	cursor: pointer;
+}
+
+.abilityType:hover {
+	transform: scale(1.2);
+}
+
+table {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 50px;
+	box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
+	background-color: rgba(0, 0, 0, 0.7);
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+th {
+	width: 50%;
+	font-size: 3vh;
+	padding: 2vh;
+	color: #ffffff;
+}
+
+td {
+	width: 50%;
+	font-size: 3vh;
+	color: #ffffff;
+}
+
+.task img,
+audio {
+	margin-top: -30px;
+	margin-bottom: 30px;
+}
+
+.sortable {
+	list-style-type: none;
+}
+
+.sortable li {
+	text-align: center;
+	display: inline-block;
+	background-color: #ffc2db;
+	font-size: 30px;
+	padding: 20px 0;
+	width: 70px;
+	margin: 3px;
+}
+
+label>input {
+	visibility: hidden;
+	position: absolute;
+}
+
+label>input+img {
+	cursor: pointer;
+}
+
+label>input:checked+img {
+	border: #90ee90 3px solid;
+}
+
+.btn {
+	display: block;
+	background-color: rgba(0, 0, 0, .7);
+	width: 300px;
+	margin: auto;
+	color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, .7);
+	border: 2px solid #fff;
+	margin-top: 30px;
+	font-size: 40px;
+}
+
+.btn:hover {
+	background-color: rgba(255, 255, 255, .7);
+	color: #000;
+}

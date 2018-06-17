@@ -1,0 +1,394 @@
+.playerPicture {
+	position: absolute;
+	left: 30vw;
+	top: 51vh;
+	width: 476px;
+	height: 480px;
+	transform: scale(0.5);
+	-webkit-animation-duration: 1900ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.playerStay {
+	background: url(../img/playerStay.png) no-repeat 0 0;
+	-webkit-animation-name: idle;
+}
+
+.playerAttack {
+	background: url(../img/playerAttack.png) no-repeat 0 0;
+	-webkit-animation-name: attack;
+	top: 48.5vh;
+	left: 24vw;
+	width: 968px;
+	height: 472px;
+}
+
+.playerHeal {
+	background: url(../img/playerHeal.png) no-repeat 0 0;
+	-webkit-animation-name: restore;
+	top: 48vh;
+	left: 27vw;
+	width: 584px;
+	height: 498px;
+}
+
+.playerHurt {
+	background: url(../img/playerHurt.png) no-repeat 0 0;
+	-webkit-animation-name: hurt;
+	top: 48vh;
+	left: 27vw;
+	width: 584px;
+	height: 498px;
+}
+
+.playerDie {
+	background: url(../img/playerDie.png) no-repeat 0 0;
+	-webkit-animation-name: dying;
+	-webkit-animation-duration: 4000ms;
+	top: 45vh;
+	left: 27vw;
+	width: 659px;
+	height: 577px;
+}
+
+.zombiePicture {
+	position: absolute;
+	right: 35vw;
+	top: 49vh;
+	width: 244px;
+	height: 450px;
+	transform: scale(0.7);
+	-webkit-animation-duration: 1600ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.zombieStay {
+	-webkit-animation-name: idle1;
+	background: url(../img/zombieStay.png) no-repeat 0 0;
+}
+
+.zombieAttack {
+	-webkit-animation-name: attack1;
+	background: url(../img/zombieAttack.png) no-repeat 0 0;
+	width: 258px;
+	height: 392px;
+}
+
+.zombieHurt {
+	-webkit-animation-name: idle1;
+	background: url(../img/zombieStay.png) no-repeat 0 0;
+}
+
+.zombieDie {
+	width: 466px;
+	height: 288px;
+	top: 70vh;
+	right: 30vw;
+	-webkit-animation-name: dying1;
+	background: url(../img/zombieDie.png) no-repeat 0 0;
+	-webkit-animation-duration: 4000ms;
+}
+
+@-webkit-keyframes attack {
+	0% {
+		background-position: -10px 0;
+	}
+	20% {
+		background-position: -10px 0;
+	}
+	20.001% {
+		background-position: -998px 0;
+	}
+	40% {
+		background-position: -998px 0;
+	}
+	40.001% {
+		background-position: -1986px 0;
+	}
+	60% {
+		background-position: -1986px 0;
+	}
+	60.001% {
+		background-position: -2974px 0;
+	}
+	80% {
+		background-position: -2974px 0;
+	}
+	80.001% {
+		background-position: -3962px 0;
+	}
+	99.999% {
+		background-position: -3962px 0;
+	}
+	100% {
+		background-position: -10px 0;
+	}
+}
+
+@-webkit-keyframes idle {
+	0% {
+		background-position: -10px 0;
+	}
+	20% {
+		background-position: -10px 0;
+	}
+	20.001% {
+		background-position: -506px 0;
+	}
+	40% {
+		background-position: -506px 0;
+	}
+	40.001% {
+		background-position: -1002px 0;
+	}
+	60% {
+		background-position: -1002px 0;
+	}
+	60.001% {
+		background-position: -1498px 0;
+	}
+	80% {
+		background-position: -1498px 0;
+	}
+	80.001% {
+		background-position: -1994px 0;
+	}
+	99.999% {
+		background-position: -1994px 0;
+	}
+	100% {
+		background-position: -10px 0;
+	}
+}
+
+@-webkit-keyframes hurt {
+	0% {
+		background-position: -10px 0;
+	}
+	20% {
+		background-position: -10px 0;
+	}
+	20.001% {
+		background-position: -614px 0;
+	}
+	40% {
+		background-position: -614px 0;
+	}
+	40.001% {
+		background-position: -1218px 0;
+	}
+	60% {
+		background-position: -1218px 0;
+	}
+	60.001% {
+		background-position: -1822px 0;
+	}
+	80% {
+		background-position: -1822px 0;
+	}
+	80.001% {
+		background-position: -2426px 0;
+	}
+	99.999% {
+		background-position: -2426px 0;
+	}
+	100% {
+		background-position: -10px 0;
+	}
+}
+
+@-webkit-keyframes restore {
+	0% {
+		background-position: -10px 0;
+	}
+	20% {
+		background-position: -10px 0;
+	}
+	20.001% {
+		background-position: -561px 0;
+	}
+	40% {
+		background-position: -561px 0;
+	}
+	40.001% {
+		background-position: -1112px 0;
+	}
+	60% {
+		background-position: -1112px 0;
+	}
+	60.001% {
+		background-position: -1663px 0;
+	}
+	80% {
+		background-position: -1663px 0;
+	}
+	80.001% {
+		background-position: -2214px 0;
+	}
+	99.999% {
+		background-position: -2214px 0;
+	}
+	100% {
+		background-position: -10px 0;
+	}
+}
+
+@-webkit-keyframes dying {
+	0% {
+		background-position: -10px 0;
+	}
+	20% {
+		background-position: -10px 0;
+	}
+	20.001% {
+		background-position: -689px 0;
+	}
+	40% {
+		background-position: -689px 0;
+	}
+	40.001% {
+		background-position: -1368px 0;
+	}
+	60% {
+		background-position: -1368px 0;
+	}
+	60.001% {
+		background-position: -2047px 0;
+	}
+	80% {
+		background-position: -2047px 0;
+	}
+	80.001% {
+		background-position: -2726px 0;
+	}
+	99.999% {
+		background-position: -2726px 0;
+	}
+	100% {
+		background-position: -10px 0;
+	}
+}
+
+/*  */
+
+@-webkit-keyframes attack1 {
+	0% {
+		background-position: -10px 0;
+	}
+	20% {
+		background-position: -10px 0;
+	}
+	20.001% {
+		background-position: -286px 0;
+	}
+	40% {
+		background-position: -286px 0;
+	}
+	40.001% {
+		background-position: -526px 0;
+	}
+	60% {
+		background-position: -526px 0;
+	}
+	60.001% {
+		background-position: -782px 0;
+	}
+	80% {
+		background-position: -782px 0;
+	}
+	80.001% {
+		background-position: -1048px 0;
+	}
+	99.999% {
+		background-position: -1048px 0;
+	}
+	100% {
+		background-position: -10px 0;
+	}
+}
+
+@-webkit-keyframes idle1 {
+	0% {
+		background-position: -10px 0;
+	}
+	20% {
+		background-position: -10px 0;
+	}
+	20.001% {
+		background-position: -274px 0;
+	}
+	40% {
+		background-position: -274px 0;
+	}
+	40.001% {
+		background-position: -538px 0;
+	}
+	60% {
+		background-position: -538px 0;
+	}
+	60.001% {
+		background-position: -802px 0;
+	}
+	80% {
+		background-position: -802px 0;
+	}
+	80.001% {
+		background-position: -1074px 0;
+	}
+	99.999% {
+		background-position: -1074px 0;
+	}
+	100% {
+		background-position: -10px 0;
+	}
+}
+
+@-webkit-keyframes dying1 {
+	0% {
+		background-position: -10px 0;
+	}
+	20% {
+		background-position: -10px 0;
+	}
+	20.001% {
+		background-position: -497px 0;
+	}
+	40% {
+		background-position: -497px 0;
+	}
+	40.001% {
+		background-position: -986px 0;
+	}
+	60% {
+		background-position: -986px 0;
+	}
+	60.001% {
+		background-position: -1430px 0;
+	}
+	80% {
+		background-position: -1430px 0;
+	}
+	80.001% {
+		background-position: -1898px 0;
+	}
+	99.999% {
+		background-position: -1898px 0;
+	}
+	100% {
+		background-position: -30px 0;
+	}
+}
+
+.bg1 {
+	background-image: url("../img/bg1.jpg");
+}
+
+.bg2 {
+	background-image: url("../img/bg2.jpg");
+}
+
+.bg3 {
+	background-image: url("../img/bg3.jpg");
+}
